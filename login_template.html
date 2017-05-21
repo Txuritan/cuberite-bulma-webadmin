@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Copyright Justin S and Cuberite Team, licensed under CC-BY-SA 3.0 -->
+<html>
+
+<head>
+    <title>Cuberite WebAdmin - Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" />
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="container is-fluid">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="nav-item">
+                    <img src="/logo_login.png" alt="Cuberite Logo" style="filter: invert(100%);">
+                </a>
+            </div>
+  
+            <span class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+  
+            <div class="nav-right nav-menu" id="nav-menu">
+                <div class="nav-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button" href="/webadmin/">
+                                <span class="icon">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                </span>
+                                <span>Sign In</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column">
+                    <div class="container">
+                        <nav class="panel">
+                            <p class="panel-heading">
+                                Cuberite WebAdmin
+                            </p>
+                            <div class="panel-block" style="background-color: #ffffff;">
+                                <iframe width="100%" height="100%" style="border:none;min-height:350px;max-height:450px" src="/guest.html"></iframe>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <a href="https://cuberite.org/" target="_blank">Cuberite</a>
+                </div>
+                <div class="column">
+                    <a href="https://forum.cuberite.org/" target="_blank">Forums</a>
+                </div>
+                <div class="column">
+                    <a href="https://builds.cuberite.org/" target="_blank">Buildserver</a>
+                </div>
+                <div class="column">
+                    <a href="https://api.cuberite.org/" target="_blank">API Documentation</a>
+                </div>
+                <div class="column">
+                    <a href="https://book.cuberite.org/" target="_blank">User's Manual</a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    Copyright © <a href="https://cuberite.org/" target="_blank">Cuberite Team</a>.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var $toggle = $('#nav-toggle');
+            var $menu = $('#nav-menu');
+            
+            $toggle.click(function() {
+                $(this).toggleClass('is-active');
+                $menu.toggleClass('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
